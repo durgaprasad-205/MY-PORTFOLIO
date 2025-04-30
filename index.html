@@ -6,7 +6,7 @@
     <title>Durga Prasad | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
@@ -113,54 +113,64 @@
                 </div>
             </div>
         </section>
-
         <!-- Education Section -->
-        <section id="education" class="section">
-            <div class="container">
-                <h2 class="section-title">My <span>Education</span></h2>
-                <div class="education-timeline">
-                    <!-- B.Tech -->
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">2021 - Present</div>
-                            <h3>B.Tech in Electrical and Electronics Engineering</h3>
-                            <p>Vignan's Institute of Information Technology, Visakhapatnam</p>
-                            <p>CGPA: 9.59 (Pursuing 3rd Year)</p>
-                            <button class="btn timeline-details-btn">View Details</button>
-                            <div class="timeline-details">
-                                <h4>Key Achievements:</h4>
-                                <ul>
-                                    <li>Consistently ranked in top 5% of department</li>
-                                    <li>Received merit scholarship for academic excellence</li>
-                                    <li>Active member of IEEE student chapter</li>
-                                </ul>
+                <section id="education" class="section">
+                    <div class="container">
+                        <h2 class="section-title">My <span>Education</span></h2>
+                        <div class="education-timeline">
+                            <!-- B.Tech -->
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <div class="timeline-date">2022 - Present</div>
+                                    <h3>B.Tech in Electrical and Electronics Engineering</h3>
+                                    <p>Vignan's Institute of Information Technology, Visakhapatnam</p>
+                                    <p>CGPA: 9.51 (Pursuing 4th Year)</p>
+                                    <button class="btn timeline-details-btn">View Details</button>
+                                    <div class="timeline-details">
+                                        <h4>Key Achievements:</h4>
+                                        <ul>
+                                            <li>Consistently ranked in top 5% of department in academics</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <script>
+                                document.querySelectorAll('.timeline-details-btn').forEach(button => {
+                                    button.addEventListener('click', () => {
+                                        const details = button.nextElementSibling;
+                                        details.classList.toggle('show');
+                                        button.textContent = details.classList.contains('show') ? 'Hide Details' : 'View Details';
+                                    });
+                                });
+                            </script>
+                                
+                                
+                            
+                            
+                            <!-- Intermediate -->
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <div class="timeline-date">2020 - 2022</div>
+                                    <h3>Intermediate (MPC)</h3>
+                                    <p>Sri Chaitanya Junior College, Visakhapatnam</p>
+                                    <p>Percentage: 82%</p>
+                                </div>
+                            </div>
+                            
+                            <!-- SSC -->
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <div class="timeline-date">2020</div>
+                                    <h3>SSC</h3>
+                                    <p>Ravindra Bharathi School, Visakhapatnam</p>
+                                    <p>Percentage: 96%</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    <!-- Intermediate -->
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">2019 - 2021</div>
-                            <h3>Intermediate (MPC)</h3>
-                            <p>Sri Chaitanya Junior College, Visakhapatnam</p>
-                            <p>Percentage: 82%</p>
-                        </div>
-                    </div>
-                    
-                    <!-- SSC -->
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">2019</div>
-                            <h3>SSC</h3>
-                            <p>Ravindra Bharathi School, Visakhapatnam</p>
-                            <p>Percentage: 96%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section> 
 
         <!-- Skills Section -->
         <section id="skills" class="section">
@@ -209,6 +219,51 @@
                             <div class="progress" data-width="85%"></div>
                         </div>
                     </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>DSA</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span> Artificial Intellegence</span>
+                            <span>89%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="89%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Machine learning</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Computer networks and Operating systems</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>DBMS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="95%"></div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="tab-content" id="electrical">
@@ -237,6 +292,24 @@
                         </div>
                         <div class="progress-bar">
                             <div class="progress" data-width="82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Control systems</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Electrical Machines</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%"></div>
                         </div>
                     </div>
                 </div>
@@ -320,9 +393,6 @@
     </div>
 </section>
 
-<style>
-   
-</style>
 
         <!-- Experience Section -->
         <section id="experience" class="section">
@@ -333,9 +403,9 @@
                     <div class="experience-card">
                         <div class="exp-header">
                             <h3>Industrial Automation Intern</h3>
-                            <span class="exp-date">Jun 2023 - Aug 2023</span>
+                            <span class="exp-date">October 2024 - December 2023</span>
                         </div>
-                        <div class="exp-company">ABC Automation Solutions</div>
+                        <div class="exp-company">Edu-Skills</div>
                         <div class="exp-highlights">
                             <h4>Key Responsibilities:</h4>
                             <ul>
@@ -351,9 +421,9 @@
                     <div class="experience-card">
                         <div class="exp-header">
                             <h3>8051 Microcontroller Intern</h3>
-                            <span class="exp-date">Dec 2022 - Feb 2023</span>
+                            <span class="exp-date">Aprial 2024 - May 2024</span>
                         </div>
-                        <div class="exp-company">Embedded Systems Institute</div>
+                        <div class="exp-company">IGIAT</div>
                         <div class="exp-highlights">
                             <h4>Key Achievements:</h4>
                             <ul>
@@ -368,110 +438,6 @@
             </div>
         </section>
 
-        <style>
-            /* Experience Section Specific Styles */
-            .experience-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-                gap: 30px;
-                margin-top: 50px;
-            }
-
-            .experience-card {
-                background-color: white;
-                border-radius: 15px;
-                padding: 30px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-                transition: transform 0.3s ease;
-            }
-
-            .experience-card:hover {
-                transform: translateY(-5px);
-            }
-
-            .exp-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 10px;
-            }
-
-            .exp-header h3 {
-                color: var(--primary);
-            }
-
-            .exp-date {
-                background: #e9ecef;
-                padding: 5px 12px;
-                border-radius: 30px;
-                font-size: 0.8rem;
-                color: var(--gray);
-            }
-
-            .exp-company {
-                font-weight: 600;
-                margin-bottom: 15px;
-                color: var(--dark);
-            }
-
-            .exp-highlights h4 {
-                margin: 15px 0 10px;
-                color: var(--primary);
-            }
-
-            .exp-highlights ul {
-                padding-left: 20px;
-            }
-
-            .exp-highlights li {
-                margin-bottom: 8px;
-            }
-
-            .exp-details-btn {
-                margin-top: 20px;
-                width: 100%;
-            }
-        </style>
-
-        <script>
-            // Certificate Modal Functions
-            function openCertificateModal(url, title) {
-                const certificateModal = document.getElementById('certificateModal');
-                const certificateModalTitle = document.getElementById('certificate-modal-title');
-                const certificateView = document.querySelector('.certificate-view');
-                
-                certificateModalTitle.textContent = title;
-                certificateView.src = url;
-                certificateModal.style.display = "flex";
-                document.body.style.overflow = "hidden";
-            }
-
-            function closeCertificateModal() {
-                const certificateModal = document.getElementById('certificateModal');
-                const certificateView = document.querySelector('.certificate-view');
-                
-                certificateModal.style.display = "none";
-                document.body.style.overflow = "auto";
-                certificateView.src = "";
-            }
-
-            // Close modal when clicking outside
-            window.addEventListener('click', function(event) {
-                const certificateModal = document.getElementById('certificateModal');
-                if (event.target === certificateModal) {
-                    closeCertificateModal();
-                }
-            });
-
-            // Close with Escape key
-            document.addEventListener('keydown', function(event) {
-                const certificateModal = document.getElementById('certificateModal');
-                if (event.key === 'Escape' && certificateModal.style.display === 'flex') {
-                    closeCertificateModal();
-                }
-            });
-        </script>
-
         <!-- Certifications Section -->
         <section id="certifications" class="section">
             <div class="container">
@@ -480,65 +446,76 @@
                     <ul class="certificate-list">
                         <li class="certificate-item">
                             <div class="certificate-info">
+                                <h3>Raspberry Pi Workshop</h3>
+                                <p>Vignan's Institute - Issued March 2024</p>
+                            </div>
+                            <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1d85Vm4H63fJkvKX53xKqJBGYV4uMvTns/preview" data-title="Raspberry Pi Workshop Certificate" data-verify="#">
+                                View
+                            </button>
+                        </li>
+                        <li class="certificate-item">
+                            <div class="certificate-info">
                                 <h3>Python Programming</h3>
-                                <p>Codio, edX - Issued May 2022</p>
+                                <p>Codio, edX - Issued June 2024</p>
                             </div>
                             <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/111ZX5GE51iNSNT7FbBbjq9tJC997elr9/preview" data-title="Python Programming Certificate" data-verify="#">
-                                View Certificate
+                                View
+                            </button>
+                        </li>
+                        <li class="certificate-item">
+                            <div class="certificate-info">
+                                <h3>RBI-Quiz</h3>
+                                <p>Reserve Bank of India - Issued September 2024</p>
+                            </div>
+                            <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1hrXkiaEEwr-JSaxRSs6Hhx_r5ClGxCBY/preview" data-title="Raspberry Pi Workshop Certificate" data-verify="#">
+                                View
                             </button>
                         </li>
                         <li class="certificate-item">
                             <div class="certificate-info">
                                 <h3>Public Speaking</h3>
-                                <p>Coursera - Issued Mar 2023</p>
+                                <p>Coursera - Issued Jan 2025</p>
                             </div>
                             <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1NrKAhp969qluwEdIk2JN21j41qqq63Rl/preview" data-title="Public Speaking Certificate" data-verify="#">
-                                View Certificate
+                                View 
                             </button>
                         </li>
-                        <li class="certificate-item">
-                            <div class="certificate-info">
-                                <h3>Raspberry Pi Workshop</h3>
-                                <p>Vignan's Institute - Issued Nov 2022</p>
-                            </div>
-                            <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1d85Vm4H63fJkvKX53xKqJBGYV4uMvTns/preview" data-title="Raspberry Pi Workshop Certificate" data-verify="#">
-                                View Certificate
-                            </button>
-                        </li>
+                     
                         <li class="certificate-item">
                             <div class="certificate-info">
                                 <h3>Python Essentials - 1</h3>
-                                <p> CISCO - Issued Aug 2023</p>
+                                <p> CISCO - Issued March 2025</p>
                             </div>
                             <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1NrKAhp969qluwEdIk2JN21j41qqq63Rl/preview" data-title="Python Essentials - 1" data-verify="#">
-                                View Certificate
+                                View 
                             </button>
                         </li>
                         <li class="certificate-item">
                             <div class="certificate-info">
                                 <h3>Python Essentials - 2</h3>
-                                <p> CISCO - Issued Aug 2023</p>
+                                <p> CISCO - Issued March 2025</p>
                             </div>
                             <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1wBK7lDRWr8-J2z6qtJEEfJIGrn0P8Leb/preview" data-title="Python Essentials - 2" data-verify="#">
-                                View Certificate
+                                View 
                             </button>
                         </li>
-                        <li class="certificate-item">
-                            <div class="certificate-info">
-                                <h3>RBI Quiz</h3>
-                                <p> Reserve Bank OF India - Issued Aug 2023</p>
-                            </div>
-                            <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1hrXkiaEEwr-JSaxRSs6Hhx_r5ClGxCBY/preview" data-title="RBI Quiz" data-verify="#">
-                                View Certificate
-                            </button>
-                        </li>
+                     
                         <li class="certificate-item">
                             <div class="certificate-info">
                                 <h3>Networking Basics</h3>
-                                <p>CISCO - Issued Aug 2023</p>
+                                <p>CISCO - Issued March 2025</p>
                             </div>
                             <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1xTv98W_dS-sZO5AE_DvhEunGWWrcgtbH/preview" data-title="Networking Basics" data-verify="#">
-                                View Certificate
+                                View 
+                            </button>
+                        </li>
+                        <li class="certificate-item">
+                            <div class="certificate-info">
+                                <h3>Introduction to Cyber Security</h3>
+                                <p>CISCO - Issued March 2025</p>
+                            </div>
+                            <button class="btn cert-view-btn" data-url="https://drive.google.com/file/d/1NOVHE0Al_-GYlhmcmXT60d37MKkCPHqM/preview" data-title="Networking Basics" data-verify="#">
+                                View 
                             </button>
                         </li>
                     </ul>
@@ -552,17 +529,21 @@
         <h2 class="section-title">My <span>Resume</span></h2>
         <div class="resume-container">
             <div class="resume-card">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
                 <div class="resume-preview">
                     <div class="resume-image">
                         <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Resume Preview">
                     </div>
                     <div class="resume-actions">
-                        <a href="https://drive.google.com/file/d/1GzAJzegOfbpBqoNHUtuS4anKdnplSdRl/view?usp=drive_link" 
+                        <a href="https://drive.google.com/file/d/12qRpLCSazBqoiVMyBHofZaolZ81B7jvK/view?usp=sharing" 
                            target="_blank" 
                            class="btn primary resume-view-btn">
                            View Full Resume
                         </a>
-                        <a href="https://drive.google.com/uc?export=download&id=1GzAJzegOfbpBqoNHUtuS4anKdnplSdRl" 
+                        <a href="https://drive.google.com/uc?export=download&id=12qRpLCSazBqoiVMyBHofZaolZ81B7jvK"
+                        
                            class="btn secondary">
                            <i class='bx bx-download'></i> Download PDF
                         </a>
@@ -598,7 +579,11 @@
                             <div class="social-icons">
                                 <a href="https://www.linkedin.com/in/durga-prasad-7ba0811a4/" class="social-link"><i class='bx bxl-linkedin'></i></a>
                                 <a href="https://github.com/durgaprasad-205" class="social-link"><i class='bx bxl-github'></i></a>
-                                <a href="https://x.com/DurgaPrasa_05" class="social-link"><i class='bx bxl-twitter'></i></a>
+                                <a href="https://x.com/DurgaPrasa_05" class="social-link">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                      <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                                    </svg>
+                                  </a>
                                 <a href="https://www.instagram.com/__.durga.prasad.__/?hl=en" class="social-link"><i class='bx bxl-instagram'></i></a>
                             </div>
                         </div>
@@ -649,7 +634,11 @@
                 <div class="footer-social">
                     <a href="https://www.linkedin.com/in/durga-prasad-7ba0811a4/"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/durgaprasad-205"><i class='bx bxl-github'></i></a>
-                    <a href="https://x.com/DurgaPrasa_05"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://x.com/DurgaPrasa_05" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 20 2o" fill="currentColor">
+                          <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                        </svg>
+                      </a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -918,6 +907,74 @@
     });
 
 
+            // Certificate Modal Functions
+            function openCertificateModal(url, title) {
+                const certificateModal = document.getElementById('certificateModal');
+                const certificateModalTitle = document.getElementById('certificate-modal-title');
+                const certificateView = document.querySelector('.certificate-view');
+                
+                certificateModalTitle.textContent = title;
+                certificateView.src = url;
+                certificateModal.style.display = "flex";
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeCertificateModal() {
+                const certificateModal = document.getElementById('certificateModal');
+                const certificateView = document.querySelector('.certificate-view');
+                
+                certificateModal.style.display = "none";
+                document.body.style.overflow = "auto";
+                certificateView.src = "";
+            }
+
+            // Close modal when clicking outside
+            window.addEventListener('click', function(event) {
+                const certificateModal = document.getElementById('certificateModal');
+                if (event.target === certificateModal) {
+                    closeCertificateModal();
+                }
+            });
+
+            // Close with Escape key
+            document.addEventListener('keydown', function(event) {
+                const certificateModal = document.getElementById('certificateModal');
+                if (event.key === 'Escape' && certificateModal.style.display === 'flex') {
+                    closeCertificateModal();
+                }
+            });
+
+       
+// Create floating particles
+document.addEventListener('DOMContentLoaded', function() {
+    const certSection = document.getElementById('certifications');
+    const colors = ['rgba(44, 123, 229, 0.1)', 'rgba(0, 201, 167, 0.1)'];
+    
+    for (let i = 0; i < 15; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('cert-particle');
+        
+        // Random properties
+        const size = Math.random() * 10 + 5;
+        const posX = Math.random() * 100;
+        const posY = Math.random() * 100;
+        const duration = Math.random() * 20 + 10;
+        const delay = Math.random() * 5;
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${posX}%`;
+        particle.style.top = `${posY}%`;
+        particle.style.background = color;
+        particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+        
+        certSection.appendChild(particle);
+    }
+});
+
+                    
+                        
     </script>
 </body>
 </html>
